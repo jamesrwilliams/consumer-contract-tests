@@ -1,8 +1,21 @@
 # Consumer Driven Contract Testing with Pact
 
-- https://docs.pact.io/
-- https://github.com/eon-com/toyapp-pact-demo
-- https://pactflow.io/
+## Problem
+
+Setup consumer based contract tests (using pact) with a pre-existing library that uses both 
+CommonJS and ES modules, and allow Pact activities to be managed independently of other Karma 
+based tests. All without changing the package.json "type" property.
+
+### Module sample structure
+
+```mermaid
+graph LR
+  spec[tests/contract/consumer.spec.js]
+  lib[lib/api.js]
+  util[lib/utils/util.js]
+  spec-- "Using require()" -->lib
+  lib-- "Using import/export" -->util
+```
 
 ## Terminology
 
@@ -15,3 +28,9 @@
 - `Provider state` - Describes the state that the provider should be in when a given request is replayed and usually has a “fixture name” such as “when user Joe Doe exists”.
 - `Pact specification` - It is a document describing the structure of the generated Pact file, allowing for interoperability between different languages/Pact implementations.
 - `Pact broker` - The Pact Broker is a central application for sharing consumer driven contracts and verification results. It is optimised for use with Pact.
+
+## See Also
+
+- https://docs.pact.io/
+- https://github.com/eon-com/toyapp-pact-demo
+- https://pactflow.io/
