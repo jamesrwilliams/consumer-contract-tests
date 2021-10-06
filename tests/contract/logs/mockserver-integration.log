@@ -1,7 +1,7 @@
-I, [2021-10-06T09:47:26.166448 #2313]  INFO -- : Registered expected interaction GET /test
-D, [2021-10-06T09:47:26.166597 #2313] DEBUG -- : {
+I, [2021-10-06T10:17:39.004265 #7600]  INFO -- : Registered expected interaction GET /test
+D, [2021-10-06T10:17:39.004440 #7600] DEBUG -- : {
   "description": "a request for test information",
-  "providerState": "I can make a GET",
+  "providerState": "I can make a POST to an MJS file",
   "request": {
     "method": "GET",
     "path": "/test",
@@ -25,8 +25,8 @@ D, [2021-10-06T09:47:26.166597 #2313] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-06T09:47:26.174491 #2313]  INFO -- : Received request GET /test
-D, [2021-10-06T09:47:26.174595 #2313] DEBUG -- : {
+I, [2021-10-06T10:17:39.013795 #7600]  INFO -- : Received request GET /test
+D, [2021-10-06T10:17:39.013904 #7600] DEBUG -- : {
   "path": "/test",
   "query": "",
   "method": "get",
@@ -38,8 +38,8 @@ D, [2021-10-06T09:47:26.174595 #2313] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-06T09:47:26.174876 #2313]  INFO -- : Found matching response for GET /test
-D, [2021-10-06T09:47:26.174926 #2313] DEBUG -- : {
+I, [2021-10-06T10:17:39.014482 #7600]  INFO -- : Found matching response for GET /test
+D, [2021-10-06T10:17:39.014584 #7600] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json"
@@ -53,64 +53,6 @@ D, [2021-10-06T09:47:26.174926 #2313] DEBUG -- : {
     }
   ]
 }
-I, [2021-10-06T09:47:26.179995 #2313]  INFO -- : Verifying - interactions matched
-I, [2021-10-06T09:47:26.183277 #2313]  INFO -- : Cleared interactions
-I, [2021-10-06T09:47:26.188172 #2313]  INFO -- : Registered expected interaction POST /test
-D, [2021-10-06T09:47:26.188277 #2313] DEBUG -- : {
-  "description": "a request for test information",
-  "providerState": "I can make a POST",
-  "request": {
-    "method": "POST",
-    "path": "/test",
-    "headers": {
-      "Accept": "application/json"
-    }
-  },
-  "response": {
-    "status": 200,
-    "headers": {
-      "Content-Type": "application/json"
-    },
-    "body": [
-      {
-        "foo": 1
-      },
-      {
-        "bar": 2
-      }
-    ]
-  },
-  "metadata": null
-}
-I, [2021-10-06T09:47:26.193469 #2313]  INFO -- : Received request POST /test
-D, [2021-10-06T09:47:26.193552 #2313] DEBUG -- : {
-  "path": "/test",
-  "query": "",
-  "method": "post",
-  "headers": {
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Accept": "application/json",
-    "User-Agent": "axios/0.22.0",
-    "Host": "localhost:8992",
-    "Connection": "close",
-    "Version": "HTTP/1.1"
-  }
-}
-I, [2021-10-06T09:47:26.193682 #2313]  INFO -- : Found matching response for POST /test
-D, [2021-10-06T09:47:26.193725 #2313] DEBUG -- : {
-  "status": 200,
-  "headers": {
-    "Content-Type": "application/json"
-  },
-  "body": [
-    {
-      "foo": 1
-    },
-    {
-      "bar": 2
-    }
-  ]
-}
-I, [2021-10-06T09:47:26.196907 #2313]  INFO -- : Verifying - interactions matched
-I, [2021-10-06T09:47:26.200037 #2313]  INFO -- : Cleared interactions
-I, [2021-10-06T09:47:26.203825 #2313]  INFO -- : Merging interactions into pact for MyProvider at /Users/james.williams/projects/contract-test-demo/tests/contract/pacts/myconsumer-myprovider.json
+I, [2021-10-06T10:17:39.020524 #7600]  INFO -- : Verifying - interactions matched
+I, [2021-10-06T10:17:39.024026 #7600]  INFO -- : Cleared interactions
+I, [2021-10-06T10:17:39.029098 #7600]  INFO -- : Merging interactions into pact for MyProvider at /Users/james.williams/projects/consumer-contract-tests/tests/contract/pacts/myconsumer-myprovider.json

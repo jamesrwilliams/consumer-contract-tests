@@ -80,6 +80,31 @@
           }
         ]
       }
+    },
+    {
+      "description": "a request for test information",
+      "providerState": "I can make a POST to an MJS file",
+      "request": {
+        "method": "GET",
+        "path": "/test",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "foo": 1
+          },
+          {
+            "bar": 2
+          }
+        ]
+      }
     }
   ],
   "metadata": {
