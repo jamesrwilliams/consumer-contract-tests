@@ -1,7 +1,11 @@
-const api = require('../../lib/api');
-const path = require("path");
-const {expect} = require("chai");
-const {Pact} = require("@pact-foundation/pact");
+import { example_get_1, example_post_1 } from "../../lib/api.js";
+
+import path from "path";
+
+import {expect} from "chai";
+
+import {Pact} from "@pact-foundation/pact";
+
 
 describe('My API', () => {
 
@@ -67,7 +71,7 @@ describe('My API', () => {
         url: url,
         port: port,
       }
-      api.example_get_1(urlAndPort).then(response => {
+      example_get_1(urlAndPort).then(response => {
         expect(response.data).to.eql(EXPECTED_BODY)
         done()
       }, done)
@@ -117,7 +121,7 @@ describe('My API', () => {
         url: url,
         port: port,
       }
-      api.example_post_1(urlAndPort).then(response => {
+      example_post_1(urlAndPort).then(response => {
         expect(response.data).to.eql(EXPECTED_BODY)
         done()
       }, done)

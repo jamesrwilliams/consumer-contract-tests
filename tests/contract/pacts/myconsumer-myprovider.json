@@ -1,0 +1,65 @@
+{
+  "consumer": {
+    "name": "MyConsumer"
+  },
+  "provider": {
+    "name": "MyProvider"
+  },
+  "interactions": [
+    {
+      "description": "a request for test information",
+      "providerState": "I can make a GET",
+      "request": {
+        "method": "GET",
+        "path": "/test",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "foo": 1
+          },
+          {
+            "bar": 2
+          }
+        ]
+      }
+    },
+    {
+      "description": "a request for test information",
+      "providerState": "I can make a POST",
+      "request": {
+        "method": "POST",
+        "path": "/test",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "foo": 1
+          },
+          {
+            "bar": 2
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
