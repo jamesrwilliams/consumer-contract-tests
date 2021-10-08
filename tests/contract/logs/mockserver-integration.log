@@ -1,5 +1,5 @@
-I, [2021-10-07T17:00:00.097779 #27174]  INFO -- : Registered expected interaction GET /test
-D, [2021-10-07T17:00:00.097991 #27174] DEBUG -- : {
+I, [2021-10-08T10:38:32.433639 #59025]  INFO -- : Registered expected interaction GET /test
+D, [2021-10-08T10:38:32.434039 #59025] DEBUG -- : {
   "description": "a request for test information",
   "providerState": "I can make a GET",
   "request": {
@@ -25,8 +25,8 @@ D, [2021-10-07T17:00:00.097991 #27174] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-07T17:00:00.107287 #27174]  INFO -- : Received request GET /test
-D, [2021-10-07T17:00:00.107379 #27174] DEBUG -- : {
+I, [2021-10-08T10:38:32.444151 #59025]  INFO -- : Received request GET /test
+D, [2021-10-08T10:38:32.444299 #59025] DEBUG -- : {
   "path": "/test",
   "query": "",
   "method": "get",
@@ -38,8 +38,8 @@ D, [2021-10-07T17:00:00.107379 #27174] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-07T17:00:00.107728 #27174]  INFO -- : Found matching response for GET /test
-D, [2021-10-07T17:00:00.107786 #27174] DEBUG -- : {
+I, [2021-10-08T10:38:32.444660 #59025]  INFO -- : Found matching response for GET /test
+D, [2021-10-08T10:38:32.444737 #59025] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json"
@@ -53,10 +53,10 @@ D, [2021-10-07T17:00:00.107786 #27174] DEBUG -- : {
     }
   ]
 }
-I, [2021-10-07T17:00:00.113995 #27174]  INFO -- : Verifying - interactions matched
-I, [2021-10-07T17:00:00.118286 #27174]  INFO -- : Cleared interactions
-I, [2021-10-07T17:00:00.123545 #27174]  INFO -- : Registered expected interaction POST /test
-D, [2021-10-07T17:00:00.123702 #27174] DEBUG -- : {
+I, [2021-10-08T10:38:32.451349 #59025]  INFO -- : Verifying - interactions matched
+I, [2021-10-08T10:38:32.456430 #59025]  INFO -- : Cleared interactions
+I, [2021-10-08T10:38:32.462374 #59025]  INFO -- : Registered expected interaction POST /test
+D, [2021-10-08T10:38:32.462504 #59025] DEBUG -- : {
   "description": "a request for test information",
   "providerState": "I can make a POST",
   "request": {
@@ -82,8 +82,8 @@ D, [2021-10-07T17:00:00.123702 #27174] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-07T17:00:00.130588 #27174]  INFO -- : Received request POST /test
-D, [2021-10-07T17:00:00.130771 #27174] DEBUG -- : {
+I, [2021-10-08T10:38:32.467641 #59025]  INFO -- : Received request POST /test
+D, [2021-10-08T10:38:32.467719 #59025] DEBUG -- : {
   "path": "/test",
   "query": "",
   "method": "post",
@@ -96,8 +96,8 @@ D, [2021-10-07T17:00:00.130771 #27174] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-07T17:00:00.130928 #27174]  INFO -- : Found matching response for POST /test
-D, [2021-10-07T17:00:00.130979 #27174] DEBUG -- : {
+I, [2021-10-08T10:38:32.467844 #59025]  INFO -- : Found matching response for POST /test
+D, [2021-10-08T10:38:32.467890 #59025] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json"
@@ -111,6 +111,6 @@ D, [2021-10-07T17:00:00.130979 #27174] DEBUG -- : {
     }
   ]
 }
-I, [2021-10-07T17:00:00.135483 #27174]  INFO -- : Verifying - interactions matched
-I, [2021-10-07T17:00:00.141093 #27174]  INFO -- : Cleared interactions
-I, [2021-10-07T17:00:00.145844 #27174]  INFO -- : Merging interactions into pact for MyProvider at /Users/james.williams/projects/consumer-contract-tests/tests/contract/pacts/myconsumer-myprovider.json
+I, [2021-10-08T10:38:32.472710 #59025]  INFO -- : Verifying - interactions matched
+I, [2021-10-08T10:38:32.476998 #59025]  INFO -- : Cleared interactions
+I, [2021-10-08T10:38:32.481192 #59025]  INFO -- : Merging interactions into pact for MyProvider at /Users/james.williams/projects/consumer-contract-tests/tests/contract/pacts/myconsumer-myprovider.json

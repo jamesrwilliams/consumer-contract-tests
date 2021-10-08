@@ -6,6 +6,10 @@ Setup consumer based contract tests (using pact) with a pre-existing library tha
 CommonJS and ES modules, and allow Pact activities to be managed independently of other Karma 
 based tests. All without changing the package.json "type" property.
 
+## Possible Solutions 
+
+1. Webpack/babel intercept incoming scripts to ensure commonJS format
+
 ### Module sample structure
 
 ```mermaid
